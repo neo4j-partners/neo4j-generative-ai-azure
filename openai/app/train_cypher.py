@@ -16,9 +16,8 @@ Here are the instructions to follow:
 2. Do not use EXISTS, SIZE keywords in the cypher.
 3. Use only Nodes and relationships mentioned in the schema while generating the response
 4. Reply ONLY in Cypher when it makes sense.
-5. Whenever you search for an Officer name or an Entity name or an Intermediary name, always do case-insensitive and fuzzy search
-6. Officer node is synonymous to Person
-7. Entity nodes are synonymous to Shell Companies
+5. Always do a case-insensitive and fuzzy search for any properties related search
+6. Patient node is synonymous to Person
 """
 
 
