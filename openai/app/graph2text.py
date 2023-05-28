@@ -64,7 +64,7 @@ def generate_response(messages):
                 response = " ".join(response.split(".")[1:])
         return response
     except:
-        return "LLM Token Limit Exceeded. Please try again"
+        return "Token Quota Exceeded. Please try again"
     finally:
         print('Response Generation Time : {}'.format(timer() - start))
 

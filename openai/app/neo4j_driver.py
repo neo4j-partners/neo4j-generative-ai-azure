@@ -21,5 +21,5 @@ def run_query(query, params={}):
 
 if __name__ == '__main__':
     print(run_query("""
-    MATCH (a:Case {name:$title}) RETURN a.bodyContent as response
+    MATCH (a:Person {name:$title}) RETURN a.bodyContent as response
     """))

@@ -105,7 +105,7 @@ def generate_cypher(messages):
         # print(response)
         return response
     except:
-        return "LLM Token Limit Exceeded. Please try again"
+        return "Token Quota Exceeded. Please try again"
     finally:
         print('Cypher Generation Time : {}'.format(timer() - start))
 

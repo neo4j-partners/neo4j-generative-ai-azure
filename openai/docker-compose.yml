@@ -4,7 +4,7 @@ services:
     build: .
     hostname: chatbot
     restart: always
-    container_name: chatbot_case_sheet
+    container_name: chatbot_skill_finder
     ports:
       - 8601:8601
     env_file:

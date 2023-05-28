@@ -10,7 +10,7 @@ from timeit import default_timer as timer
 USER_ID = "bot"
 
 # On the first execution, we have to create a user node in the database.
-run_query("""MERGE (u:User {id: $userId})""", {'userId': USER_ID})
+run_query("""MERGE (u:Person {id: $userId})""", {'userId': USER_ID})
 
 st.set_page_config(layout="wide")
 st.title("Chatbot: Powered by Neo4j & LLM")
