@@ -3,14 +3,15 @@ examples = [{
     "answer": """MATCH (p:Person)-[:HAS_EDUCATION]->(e:Education) WHERE toLower(e.degree) CONTAINS 'bachelor' AND toLower(e.degree) CONTAINS 'electrical engineering' RETURN COUNT(p)"""
 }]
 
-instr_template = """
-Here are the instructions to follow:
+instr_template = """You are an expert Neo4j Cypher translator who understands the question in english and convert to Cypher strictly based on the Neo4j Schema provided and the instructions below:
 1. Use the Neo4j schema to generate cypher compatible ONLY for Neo4j Version 5
-2. Do not use EXISTS, SIZE keywords in the cypher.
+2. Do not use EXISTS, SIZE keywords in the cypher. Use alias when using the WITH keyword
 3. Use only Nodes and relationships mentioned in the schema while generating the response
 4. Reply ONLY in Cypher
 5. Always do a case-insensitive and fuzzy search for any properties related search. Eg: to search for a Company name use `toLower(c.name) contains 'neo4j'`
-6. Candidate node is synonymous to Person.
+6. Candidate node is synonymous to Person
+7. Always use aliases to refer properties in the query
+Now, use this Neo4j schema and Reply ONLY in Cypher when it makes sense:
 """
 
 
@@ -32,6 +33,7 @@ Relationships:
     (:Position)-[:AT_COMPANY]->(:Company)
     (:Person)-[:HAS_SKILL]->(:Skill)
     (:Person)-[:HAS_EDUCATION]->(:Education)
+
 Ouput Format (Strict): //Only code as output. No other text
 MATCH (p:Person)-[:HAS_SKILL]->(s:Skill) WHERE toLower(p.name) CONTAINS 'java' AND toLower(p.level) CONTAINS 'expert' RETURN COUNT(p) 
 
@@ -41,12 +43,13 @@ MATCH (p:Person)-[:HAS_SKILL]->(s:Skill)
 MATCH (p)-[:HAS_POSITION]->(pos:Position)
 WHERE toLower(s.name) CONTAINS 'delphi' AND toLower(s.level) CONTAINS 'expert' 
 AND (toLower(pos.location) CONTAINS 'texas' OR toLower(pos.location) CONTAINS 'tx') RETURN COUNT(p)
-Reason:
+Let's reason this:
 1. As per schema definition of nodes & relationships above, Person node is related to Skill node via HAS_SKILL relationship.
 2. From the schema, Skill has name and levels as properties. Expertise can be checked using `level`
 3. Since Texas can be denoted as TX, we search for the position's location as either 'texas' or 'tx'
 4. Finally, we return the number of persons who match the input criteria using COUNT function
 
+Now answer this question only in Cypher without any extra text or reasoning.
 """
 
 output_fmt = """
