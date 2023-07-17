@@ -131,3 +131,5 @@ dmypy.json
 neo4j/
 
 .DS_STORE
+
+*.toml
