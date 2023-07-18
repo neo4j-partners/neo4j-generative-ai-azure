@@ -1,4 +1,4 @@
-# Intelligent Medical Assistant using Azure OpenAI & Neo4j
+# neo4j-generative-ai-azure
 This is a sample notebook and web application which shows how Azure OpenAI can be used with Neo4j.  We will explore how to leverage Azure OpenAI LLMs to build and consume a knowledge graph in Neo4j.
 
 This notebook parses data from a public corpus of Medical Case Sheet using Azure OpenAI's `gpt-4-32k` model. The model is prompted to recognise and extract entities and relationships. 
