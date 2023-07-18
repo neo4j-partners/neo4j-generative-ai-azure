@@ -9,7 +9,7 @@ We then use the `gpt-4-32k` model and prompt it to convert questions in English 
 To get started, create a managed notebook in Azure ML. 
 Once that has started, open the notebook and a terminal window within that.  Clone this repo with the command:
 
-    git clone https://github.com/neo4j-partners/intelligent-medical-assistant.git
+    git clone https://github.com/neo4j-partners/neo4j-generative-ai-azure.git
 
 ## Notebook
 The notebook at [ingestion/ingestion.ipynb](ingestion/ingestion.ipynb) walks through prompts and tuning a model.  You will need to run that before the UI. 
