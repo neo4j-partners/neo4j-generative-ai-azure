@@ -49,9 +49,13 @@ In order to run through this lab, you'll need to set up a notebook server using 
 ![08.png)](screenshots/08.png)
 
 9. **Clone this Github repository onto the notebook instance**
-- Once the compute instance has finished deploying, you will see a terminal prompt. Clone this repository using the following command: 
+- Once the compute instance has finished deploying, you will see a terminal prompt. 
+
+Clone this repo with the command:
 
     git clone https://github.com/neo4j-partners/neo4j-generative-ai-azure.git
+
+
 
 ![09.png)](screenshots/09.png)
 
