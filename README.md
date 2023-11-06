@@ -6,7 +6,14 @@ This notebook parses data from a public corpus of Medical Case Sheet using Azure
 We then use the `gpt-4-32k` model and prompt it to convert questions in English to Cypher - Neo4j's query language for data retrieval.
 
 ## Setup
-To get started, create a managed notebook in Azure ML. 
+To get started, we'll need to set up some resources:
+
+1. A Neo4j instance running on Azure cloud. You can find [instructions](https://github.com/neo4j-partners/hands-on-lab-neo4j-and-azure-ml/blob/main/Lab%201%20-%20Deploy%20Neo4j/README.md) here and a [video tutorial](https://youtu.be/k1IJ5m4KCYA) here.
+
+2. [Generate an OpenAI API key](02-create_openai_key/README.md).
+
+3. [Create a managed notebook in Azure ML](03-setup_azureml_workspace/README.md).
+
 Once that has started, open the notebook and a terminal window within that.  Clone this repo with the command:
 
     git clone https://github.com/neo4j-partners/neo4j-generative-ai-azure.git

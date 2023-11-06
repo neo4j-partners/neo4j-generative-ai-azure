@@ -56,7 +56,6 @@ Clone this repo with the command:
     git clone https://github.com/neo4j-partners/neo4j-generative-ai-azure.git
 
 
-
 ![09.png)](screenshots/09.png)
 
 10. **Enter API and Neo4j authentication details into config.env file**
