@@ -1,5 +1,4 @@
 # Set up Open AI API Key 
-Tutorial and resources for setting up Google Cloud Dataflow with Neo4j and BigQuery
 
 # Overview
 Using the following steps you can set up an Azure Open AI API key for use in the Neo4j Azure Generative AI lab. 
