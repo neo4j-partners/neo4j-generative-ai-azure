@@ -8,12 +8,12 @@ Using the following steps you can set up an Azure Open AI API key for use in the
 ## Create an Azure Open AI Key 
 
 1. **Create an Azure Open AI Workspace**
-- Go to the Azure Open AI console from the Azure Portal
+- Go to the [Azure Open AI console](https://portal.azure.com/#view/Microsoft_Azure_ProjectOxford/CognitiveServicesHub/~/OpenAI) from the [Azure Portal](https://portal.azure.com/)
 - Select "Create"
 
 ![01](screenshots/01.png)
 
-2. **Choose a resource group and fill in the required fields**
+2. **Choose a resource group or create a new one and fill in the required fields**
 - Take the defaults for the fields in the rest of the screens and click "Create" 
 
 ![02.png](screenshots/02.png)
