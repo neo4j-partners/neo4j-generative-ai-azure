@@ -11,7 +11,7 @@ db = st.secrets["NEO4J_DB"]
 gds = GraphDataScience(
     host,
     auth=(user, password),
-    aura_ds=True)
+    aura_ds=False)
 
 gds.set_database("neo4j")
 
