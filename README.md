@@ -26,6 +26,7 @@ The UI application is based on Streamlit.
 
 Let's install python & pip first:
 
+    sudo apt-get update
     apt install -y python
     apt install -y pip
 
