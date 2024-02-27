@@ -9,8 +9,8 @@ We then use the `gpt-4-32k` model and prompt it to convert questions in English 
 To get started, we'll need to set up some resources:
 
 1. A Neo4j instance running on Azure cloud. You can find a [video tutorial](https://youtu.be/k1IJ5m4KCYA) here.
-2. [Generate an OpenAI API key](02-create_openai_key/README.md).
-3. [Create a managed notebook in Azure ML](03-setup_azureml_workspace/README.md).
+2. [Generate an OpenAI API key](2-create_openai_key/README.md).
+3. [Create a managed notebook in Azure ML](3-setup_azureml_workspace/README.md).
 
 Once that has started, open the notebook and a terminal window within that.  Clone this repo with the command:
 
